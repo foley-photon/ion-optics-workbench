@@ -1,0 +1,29 @@
+# Every test, on each push and pull request: the Node tests (the engine and UI modules, the validation suite at the
+# quick level, the presets, the independent physics checks, the page check and the repository bookkeeping), and the
+# page check with the validation suite on its own (scripts/selftest.mjs), as the site's sync job runs it.
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Node tests
+        # a test that runs past 5 minutes fails on its own instead of holding the job until its time limit
+        run: node --test --test-timeout=300000 "tests/*.test.mjs"
+        timeout-minutes: 10
+      - name: Page check and validation suite
+        run: node scripts/selftest.mjs site
+        timeout-minutes: 5

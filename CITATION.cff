@@ -1,0 +1,99 @@
+cff-version: 1.2.0
+message: >-
+  If you use the Ion Optics Workbench, please cite it as below, with the
+  version you used. The ion masses of the nuclide builder are from the AME2020
+  atomic mass evaluation; cite those papers too when the masses matter.
+title: Ion Optics Workbench
+abstract: >-
+  A browser tool for electrostatic and magnetic charged-particle optics: it
+  solves Laplace's or Poisson's equation on a two-dimensional planar or
+  cylindrically symmetric grid with exact sub-grid electrode boundaries, and
+  traces ions and electrons relativistically through lenses, mirrors, energy
+  analyzers, time-of-flight spectrometers, RF devices and magnetic fields,
+  with lens, time-of-flight, emittance and capacitance analysis and a
+  validation suite against published and exact values.
+type: software
+authors:
+  - family-names: Foley
+    given-names: Casey D.
+    website: "https://cdfoley.com"
+version: "0.2.4"
+date-released: "2026-11-11"
+license: MIT
+repository-code: "https://github.com/foley-photon/ion-optics-workbench"
+url: "https://cdfoley.com/beta/ion-optics/"
+keywords:
+  - ion optics
+  - charged-particle optics
+  - electrostatic lens
+  - einzel lens
+  - time of flight
+  - trajectory simulation
+  - finite differences
+  - multigrid
+preferred-citation:
+  type: software
+  title: Ion Optics Workbench
+  authors:
+    - family-names: Foley
+      given-names: Casey D.
+      website: "https://cdfoley.com"
+  version: "0.2.4"
+  date-released: "2026-11-11"
+  url: "https://cdfoley.com/beta/ion-optics/"
+  repository-code: "https://github.com/foley-photon/ion-optics-workbench"
+references:
+  - type: article
+    title: "The AME 2020 atomic mass evaluation (I). Evaluation of input data, and adjustment procedures"
+    authors:
+      - family-names: Huang
+        given-names: W. J.
+      - family-names: Wang
+        given-names: M.
+      - family-names: Kondev
+        given-names: F. G.
+      - family-names: Audi
+        given-names: G.
+      - family-names: Naimi
+        given-names: S.
+    journal: Chinese Physics C
+    volume: 45
+    start: "030002"
+    year: 2021
+    doi: "10.1088/1674-1137/abddb0"
+  - type: article
+    title: "The AME 2020 atomic mass evaluation (II). Tables, graphs and references"
+    authors:
+      - family-names: Wang
+        given-names: M.
+      - family-names: Huang
+        given-names: W. J.
+      - family-names: Kondev
+        given-names: F. G.
+      - family-names: Audi
+        given-names: G.
+      - family-names: Naimi
+        given-names: S.
+    journal: Chinese Physics C
+    volume: 45
+    start: "030003"
+    year: 2021
+    doi: "10.1088/1674-1137/abddaf"
+  - type: article
+    title: "The NUBASE2020 evaluation of nuclear physics properties"
+    authors:
+      - family-names: Kondev
+        given-names: F. G.
+      - family-names: Wang
+        given-names: M.
+      - family-names: Huang
+        given-names: W. J.
+      - family-names: Naimi
+        given-names: S.
+      - family-names: Audi
+        given-names: G.
+    journal: Chinese Physics C
+    volume: 45
+    start: "030001"
+    year: 2021
+    doi: "10.1088/1674-1137/abddae"

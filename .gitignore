@@ -1,0 +1,12 @@
+# Node and Python leftovers
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# output of the by-hand scripts (bench.mjs --json, the perf scripts, the browser check's screenshots)
+out/
+
+.DS_Store
+Thumbs.db

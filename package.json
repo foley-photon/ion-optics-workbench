@@ -1,0 +1,20 @@
+{
+  "name": "ion-optics-workbench",
+  "version": "0.2.4",
+  "private": true,
+  "description": "Electrostatic and magnetic ion optics in the browser: field solving on a grid, ion and electron trajectories, lenses, detectors and time of flight",
+  "type": "module",
+  "license": "MIT",
+  "author": "Casey D. Foley (https://cdfoley.com)",
+  "homepage": "https://cdfoley.com/beta/ion-optics/",
+  "repository": "github:foley-photon/ion-optics-workbench",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test --test-timeout=300000 \"tests/*.test.mjs\"",
+    "selftest": "node scripts/selftest.mjs site",
+    "bench": "node tests/bench.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}
