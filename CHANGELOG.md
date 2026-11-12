@@ -4,6 +4,42 @@ Versions follow semantic versioning. The release version is the version of the t
 `site/js/engine/version.js` changes only when the numerics or the typed-array layouts change, because it is part of
 every cache key and of the worker handshake; each entry names it. cdfoley.com picks up the latest release once a day.
 
+## 0.2.5 - 2026-11-12
+
+Changes to the interface and the help page after a review of how the page reads and works. The engine is unchanged:
+engine version 0.2.3, and every value of the validation suite equal to the golden file.
+
+- Page: the name of the tool and one line saying what it does now sit between the beta notice and the app bar (the
+  heading was there before, but hidden).
+- Phone: the drawing is sized to the space left under the name strip, so its scale bar and axis legend stay above
+  the tab bar at the bottom of the screen.
+- Summary tab: a row of key results above the cards (transmission, waist position, rms radius at the waist, largest
+  energy error), which stays in view while the cards scroll. The Planes card gives each plane's crossings, rms spot
+  and mean time of flight on rows of their own.
+- Results dock: tabs that do not fit on the strip go into a "More" menu at its end instead of scrolling out of
+  sight; the open tab always stays on the strip.
+- Benchmarks tab: the verdict is a status pill, green "56/56 gates passed" or red "N failed". Before the first run
+  the tab says that Run quick takes a few seconds.
+- Accuracy check and TOF peak table: differences, observed orders, error estimates, σ and FWHM are shown to 3
+  significant digits. The computed values and the CSV files are unchanged.
+- Scan & tune: when the best sampled point is the first or the last of the range, the result says so and suggests
+  a wider range.
+- Canvas: the name of a plane near the right edge is drawn to the left of the plane instead of being cut off.
+- Model panel: the tab labels are no longer cut ("Electrodes", "Recording"); a shape's electrode is shown in full on
+  its card; on a wide window the Particles tab is the list of sources and the selected source is edited in the
+  inspector only (narrower windows keep the form in the tab).
+- Inspector: a "Getting started" card on a first visit (three things to try, with a link to the Quick start), which
+  stays closed once closed. "Quick run settings" starts folded and remembers whether it was opened. Small "?" links
+  on the Domain cards, the electrode editor and the run settings open the matching section of the help page.
+- Share: when the browser does not allow copying, the dialog with the link has a "Copy link" button and a line
+  saying what the link contains.
+- Build a nuclide: each number box carries its full name for screen readers.
+- Help page: the table of accuracy levels scrolls in its own box on a narrow screen, and the validation table keeps
+  its ID column in view while it scrolls. The long paragraphs on space charge and on the analysis are split under
+  short lead-ins, with the same sentences. Links to the ion time-of-flight, mean free path and cyclotron radius
+  calculators of the site. The Validation section says how to run the gates in your own browser, the References
+  start with a short "Start here" list, and the Privacy section names the interface choices kept in the browser.
+
 ## 0.2.4 - 2026-11-11
 
 First release as its own repository. It continues the version numbers the page has carried on the site, where 0.2.3

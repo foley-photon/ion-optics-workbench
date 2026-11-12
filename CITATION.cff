@@ -17,8 +17,8 @@ authors:
   - family-names: Foley
     given-names: Casey D.
     website: "https://cdfoley.com"
-version: "0.2.4"
-date-released: "2026-11-11"
+version: "0.2.5"
+date-released: "2026-11-12"
 license: MIT
 repository-code: "https://github.com/foley-photon/ion-optics-workbench"
 url: "https://cdfoley.com/beta/ion-optics/"
@@ -38,8 +38,8 @@ preferred-citation:
     - family-names: Foley
       given-names: Casey D.
       website: "https://cdfoley.com"
-  version: "0.2.4"
-  date-released: "2026-11-11"
+  version: "0.2.5"
+  date-released: "2026-11-12"
   url: "https://cdfoley.com/beta/ion-optics/"
   repository-code: "https://github.com/foley-photon/ion-optics-workbench"
 references:

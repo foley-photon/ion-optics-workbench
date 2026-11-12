@@ -132,7 +132,7 @@ Node 22 or later, no packages to install:
 node --test "tests/*.test.mjs"
 ```
 
-546 tests (2 of them, the planned cases P1 and P3, are skipped) take about 40 s. The files named `wpN-*.test.mjs` are
+553 tests (2 of them, the planned cases P1 and P3, are skipped) take about 40 s. The files named `wpN-*.test.mjs` are
 grouped by the work package in which that part of the tool was built:
 
 - `wp1`: geometry, rasterizing with exact sub-grid cuts, the finite-difference operator, the solvers and the field.

@@ -1,6 +1,6 @@
 {
   "name": "ion-optics-workbench",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": true,
   "description": "Electrostatic and magnetic ion optics in the browser: field solving on a grid, ion and electron trajectories, lenses, detectors and time of flight",
   "type": "module",
